@@ -380,6 +380,16 @@ h6 {
   h6 {
     font-size: 16px;
   }
+  .hero-layout2 {
+    background-image: linear-gradient(to top, transparent 40%, transparent 100%);
+   
+  }
+  .team-img {
+    max-width: 250px;
+   
+    left: 50%;
+    transform: translateX( -50%);
+  }
 }
 /*------------------- 1.6. Extend -------------------*/
 /*------------------- 1.7. Wordpress Default -------------------*/
@@ -3816,14 +3826,7 @@ a.text-theme:hover,
   display: inline-block;
   position: relative;
 }
-.main-menu ul li.menu-item-has-children > a:after {
-  content: "\f078";
-  position: relative;
-  font-family: var(--icon-font);
-  margin-left: 5px;
-  top: -0.8px;
-  font-size: 0.8rem;
-}
+
 .main-menu ul li:last-child {
   margin-right: 0;
 }
@@ -12460,4 +12463,8 @@ line-height: 90px;
   transform: translateY(-50%);
   white-space: nowrap;
   transition: transform .3s;
+}
+
+.voucher-text {
+  color: var(--body-bg);
 }
