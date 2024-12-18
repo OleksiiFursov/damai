@@ -87,7 +87,7 @@ Version: 1.0.0
 
 :root {
   --body-bg: #3a3640;
-  --theme-color: #a87b19;
+  --theme-color: #ac831c;
   --body-color: #bebebe;
   --title-color: #fff;
   --secondary-color: #090708;
@@ -381,14 +381,17 @@ h6 {
     font-size: 16px;
   }
   .hero-layout2 {
-    background-image: linear-gradient(to top, transparent 40%, transparent 100%);
-   
+    background-image: linear-gradient(
+      to top,
+      transparent 40%,
+      transparent 100%
+    );
   }
   .team-img {
     max-width: 250px;
-   
+
     left: 50%;
-    transform: translateX( -50%);
+    transform: translateX(-50%);
   }
 }
 /*------------------- 1.6. Extend -------------------*/
@@ -1067,15 +1070,7 @@ textarea.is-invalid {
   color: var(--title-color);
   font-weight: 500;
 }
-.vs-mobile-menu ul li a:before {
-  content: "\f105";
-  font-family: var(--icon-font);
-  position: relative;
-  left: 0;
-  top: 0;
-  margin-right: 10px;
-  display: inline-block;
-}
+
 .vs-mobile-menu ul li.vs-active > a {
   color: var(--theme-color);
 }
@@ -3585,7 +3580,13 @@ a.text-theme:hover,
     font-size: 22px;
   }
 }
+
 /* Medium devices */
+@media (min-width: 980px) and (max-width: 1600px) {
+  .hero-section {
+    padding-left: 60px;
+  }
+}
 @media (max-width: 991px) {
   .sidebar-area {
     margin-top: 40px;
@@ -4255,6 +4256,9 @@ a.text-theme:hover,
 }
 /* Small devices */
 @media (max-width: 767px) {
+  .header-logo {
+    max-width: 100px;
+  }
   .header-icons {
     gap: 10px;
   }
@@ -6980,12 +6984,12 @@ blockquote.vs-quote cite:before {
   line-height: 1;
   display: block;
   margin: 0 0 8px 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 .media-style3 .media-title {
   color: #f5c31d;
   font-size: 90px;
- 
+
   font-family: TanMonCheri;
   line-height: 1;
   margin: 25px 0 -0.14em 0;
@@ -7504,7 +7508,11 @@ blockquote.vs-quote cite:before {
     max-height: 230px;
   }
   .media-style3 .media-title {
-    font-size: 30px;
+    font-size: 45px;
+  }
+
+  .media-style3 .media-title {
+    margin: 20px 0 -0.14em 0;
   }
   .media-style3 .media-label {
     font-size: 14px;
@@ -10854,7 +10862,6 @@ blockquote.vs-quote cite:before {
   padding: 0;
   border: none;
   background-color: transparent;
-
 }
 .sidemenu-wrapper .widget_title {
   margin-bottom: 36px;
@@ -11064,7 +11071,6 @@ blockquote.vs-quote cite:before {
   letter-spacing: 3px;
   font-weight: 700;
 }
-
 
 .rating-select {
   margin-top: -0.4em;
@@ -12418,36 +12424,35 @@ blockquote.vs-quote cite:before {
   border-radius: 50%;
   width: 90px;
   height: 90px;
-  border:  1px solid rgba(0,0,0,.4);
+  border: 1px solid rgba(0, 0, 0, 0.4);
   position: fixed;
   bottom: 5%;
   right: 5%;
   background: var(--theme-color);
   text-align: center;
   cursor: pointer;
-  z-index: 1;
-  transition: transform .3s;
+  z-index: 15;
+  transition: transform 0.3s;
   color: #fff;
 }
 
 .call-me .far {
-font-size: 35px;
-line-height: 90px;
-
+  font-size: 35px;
+  line-height: 90px;
 }
 
 .call-me::after {
   content: "";
   display: block;
   border-radius: 50%;
-  border:  1.5px solid var(--theme-color);
+  border: 1.5px solid var(--theme-color);
   animation: a 2.2s infinite ease-in-out;
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   pointer-events: none;
 }
 
@@ -12458,11 +12463,11 @@ line-height: 90px;
   right: 130%;
   top: 50%;
   border-radius: 5px;
-  box-shadow: 0 0  5px rgba(0,0,0,.3);
-  padding: .9rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 0.9rem;
   transform: translateY(-50%);
   white-space: nowrap;
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 
 .voucher-text {
