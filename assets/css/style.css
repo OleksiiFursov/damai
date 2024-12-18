@@ -2411,8 +2411,6 @@ textarea.is-invalid {
   letter-spacing: 0.03em;
 }
 
-
-
 .social-style5 a,
 .social-style3 a,
 .social-style2 a {
@@ -3764,6 +3762,9 @@ a.text-theme:hover,
 }
 /* Medium devices */
 @media (max-width: 991px) {
+  .header-text[class] {
+    padding: 5px 0;
+  }
   .footer-widget .widget_title {
     font-size: 22px;
   }
@@ -6266,7 +6267,7 @@ blockquote.vs-quote cite:before {
     margin-right: 0;
   }
   .hero-layout2 .hero-content {
-    padding: 60px 0 40px 0;
+    padding: 80px 0 40px 0;
     max-width: 60%;
   }
   .hero-layout2 .hero-ripple {
@@ -7400,7 +7401,7 @@ blockquote.vs-quote cite:before {
     margin: 0 0 5px 0;
   }
   .media-style3 {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
   .media-style3 .media-title {
     font-size: 48px;
@@ -7507,14 +7508,11 @@ blockquote.vs-quote cite:before {
     max-height: 230px;
   }
   .media-style3 .media-title {
-    font-size: 45px;
-  }
-
-  .media-style3 .media-title {
+    font-size: 63px;
     margin: 20px 0 -0.14em 0;
   }
   .media-style3 .media-label {
-    font-size: 14px;
+    font-size: 15px;
     letter-spacing: 0.1em;
     margin: 0 0 15px 0;
   }
@@ -8146,6 +8144,9 @@ blockquote.vs-quote cite:before {
   .contact-table .td {
     letter-spacing: 0;
     font-size: 12px;
+  }
+  .package-style1[class] {
+    background-color: var(--body-bg);
   }
 }
 /*------------------- 4.12. Price Plan  -------------------*/
@@ -9117,6 +9118,11 @@ blockquote.vs-quote cite:before {
   outline-offset: 5px;
   position: relative;
   transition: all ease 0.4s;
+}
+.team-img {
+  max-width: 320px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .team-thumbnail:after,
 .team-thumbnail:before,
@@ -12419,6 +12425,22 @@ blockquote.vs-quote cite:before {
 }
 /*# sourceMappingURL=style.css.map */
 
+@media (max-width: 767px) {
+  .call-me[class] {
+    width: 75px;
+    height: 75px;
+  }
+
+  .call-me[class] .far {
+    font-size: 31px;
+    line-height: 75px;
+  }
+
+  .call-me[class]::before {
+    padding: 0.6rem;
+  }
+}
+
 .call-me {
   border-radius: 50%;
   width: 90px;
@@ -12479,11 +12501,10 @@ blockquote.vs-quote cite:before {
 }
 .breadcrumbs {
   list-style: none;
-  padding: 220px 0  0;
+  padding: 220px 0 0;
   margin: 0;
   display: flex;
   font-size: 0.9rem;
-  
 }
 
 .breadcrumbs li {
@@ -12511,10 +12532,9 @@ blockquote.vs-quote cite:before {
   margin: 0;
 }
 
-
 @media (max-width: 767px) {
   .breadcrumbs {
-    padding: 50px 0  0;
+    padding: 50px 0 0;
   }
 }
 
@@ -12522,13 +12542,13 @@ blockquote.vs-quote cite:before {
   color: var(--theme-color);
   font-size: larger;
   text-align: center;
-  font-weight: 500; 
+  font-weight: 500;
 }
 
 .regulamin-doc .doc-li-title::marker {
-  font-size: 2.15em; 
+  font-size: 2.15em;
 
-  font-weight: 500; 
+  font-weight: 500;
 }
 .regulamin-doc {
   text-align: left;
@@ -12538,10 +12558,45 @@ blockquote.vs-quote cite:before {
 }
 
 .regulamin-doc li {
-
   margin-bottom: 10px;
 }
 
- .regulamin-doc b {
+.regulamin-doc b {
   color: var(--theme-color);
+}
+
+/* carousel */
+@media (max-width: 768px) {
+  .hide-carousel {
+    display: none;
+  }
+  .mobile-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-cards {
+    display: none;
+  }
+}
+
+.mobile-cards .card {
+  flex: 1 1 calc(100% - 1rem);
+  background-color: var(--black-color);
+}
+
+.mobile-cards .card img {
+  max-width: 100px;
+  margin-bottom: 1rem;
+}
+
+.mobile-cards .card h3 {
+  font-size: 1.2rem;
+}
+
+.mobile-cards .card p {
+  font-size: 0.9rem;
+  color: #555;
 }
