@@ -86,16 +86,16 @@ Version: 1.0.0
 }
 
 :root {
-  --body-bg: #3a3640;
-  --theme-color: #ac831c;
+  --body-bg: #2b2220;
+  --theme-color: #b8860b;
   --body-color: #bebebe;
   --title-color: #fff;
   --secondary-color: #090708;
   --smoke-color: #eff1f5;
   --light-color: #f8f9fa;
-  --black-color: #000000;
-  --white-color: #000000;
-  --yellow-color: #fec624;
+  --black-color: #060403;
+  --white-color: #060403;
+  --yellow-color: #b8860b;
   --success-color: #28a745;
   --error-color: #dc3545;
   --border-color: #e7e5e5;
@@ -1422,7 +1422,7 @@ textarea.is-invalid {
   padding: 23px 37px;
 }
 .vs-btn.style8 {
-  background-color: #f5c31d;
+  background-color: #b8860b;
   font-weight: 500;
 }
 .vs-btn.style8::after,
@@ -2399,10 +2399,7 @@ textarea.is-invalid {
 .social-style1 a:last-child {
   margin-right: 0;
 }
-.social-style4 a:hover,
-.social-style1 a:hover {
-  color: var(--title-color);
-}
+
 .social-style4 .social-title,
 .social-style1 .social-title {
   font-size: 14px;
@@ -2414,9 +2411,7 @@ textarea.is-invalid {
   letter-spacing: 0.03em;
 }
 
-.social-style1 a:hover {
-  color: var(--theme-color);
-}
+
 
 .social-style5 a,
 .social-style3 a,
@@ -4153,7 +4148,7 @@ a.text-theme:hover,
 .header-layout3 .header-top,
 .header-layout2 .header-top,
 .header-layout1 .header-top {
-  background-color: #f5c31d;
+  background-color: #b8860b;
 }
 
 @media (min-width: 1500px) {
@@ -4572,6 +4567,10 @@ a.text-theme:hover,
 }
 .footer-layout8 .copyright-wrap {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-social {
+  font-size: xx-large;
 }
 
 /* Medium devices */
@@ -6038,7 +6037,7 @@ blockquote.vs-quote cite:before {
   margin: 0 0 30px 0;
   padding: 0 70px;
   line-height: 1;
-  color: #f5c31d;
+  color: #b8860b;
   animation-delay: 0s;
 }
 .hero-layout1 .vs-btn {
@@ -6874,7 +6873,7 @@ blockquote.vs-quote cite:before {
 }
 .media-style1 .media-text {
   margin: 0;
-  color: #464f56;
+  color: #8b8481;
   font-size: 20px;
   line-height: 26px;
 }
@@ -6987,7 +6986,7 @@ blockquote.vs-quote cite:before {
   font-family: "Open Sans", sans-serif;
 }
 .media-style3 .media-title {
-  color: #f5c31d;
+  color: #b8860b;
   font-size: 90px;
 
   font-family: TanMonCheri;
@@ -12458,7 +12457,7 @@ blockquote.vs-quote cite:before {
 
 .call-me::before {
   content: "Zadzwoń do nas";
-  background: #464f56;
+  background: #8b8481;
   position: absolute;
   right: 130%;
   top: 50%;
@@ -12472,4 +12471,77 @@ blockquote.vs-quote cite:before {
 
 .voucher-text {
   color: var(--body-bg);
+}
+
+/* regulaminy */
+.menu-dark {
+  background-color: var(--black-color);
+}
+.breadcrumbs {
+  list-style: none;
+  padding: 220px 0  0;
+  margin: 0;
+  display: flex;
+  font-size: 0.9rem;
+  
+}
+
+.breadcrumbs li {
+  margin-right: 10px;
+  color: #777;
+}
+
+.breadcrumbs li a {
+  text-decoration: none;
+  color: var(--theme-color);
+}
+
+.breadcrumbs li a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs li::after {
+  content: ">";
+  margin-left: 10px;
+  color: #ccc;
+}
+
+.breadcrumbs li:last-child::after {
+  content: "";
+  margin: 0;
+}
+
+
+@media (max-width: 767px) {
+  .breadcrumbs {
+    padding: 50px 0  0;
+  }
+}
+
+.regulamin-doc p {
+  color: var(--theme-color);
+  font-size: larger;
+  text-align: center;
+  font-weight: 500; 
+}
+
+.regulamin-doc .doc-li-title::marker {
+  font-size: 2.15em; 
+
+  font-weight: 500; 
+}
+.regulamin-doc {
+  text-align: left;
+}
+.regulamin-doc ul {
+  padding-left: 20px;
+}
+
+.regulamin-doc li {
+
+  margin-bottom: 10px;
+}
+
+ .regulamin-doc b {
+  color: var(--theme-color);
 }
