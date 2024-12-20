@@ -314,7 +314,7 @@ h3 {
 
 .h4,
 h4 {
-  font-size: 30px;
+  font-size: 28px;
 }
 
 .h5,
@@ -387,8 +387,8 @@ h6 {
       transparent 100%
     );
   }
-  .team-img {
-    max-width: 250px;
+  .team-img[class] {
+    max-width: 190px;
 
     left: 50%;
     transform: translateX(-50%);
@@ -5951,6 +5951,9 @@ blockquote.vs-quote cite:before {
   .hero-layout8 {
     margin-bottom: 30px;
   }
+  .hero-img {
+    display: none;
+  }
 }
 
 .hero-ripple {
@@ -6323,6 +6326,10 @@ blockquote.vs-quote cite:before {
   }
   .hero-layout2 .hero-content {
     max-width: 100%;
+ 
+      padding: 80px 0 0 0;
+
+
   }
   .hero-layout2 .hero-img {
     max-width: 100%;
@@ -8080,6 +8087,9 @@ blockquote.vs-quote cite:before {
   }
   .form-style4 {
     padding: 40px 30px;
+  }
+  .package-style1[class] {
+    background-color: var(--body-bg);
   }
 }
 /* Small devices */
@@ -12603,4 +12613,8 @@ blockquote.vs-quote cite:before {
 .mobile-cards .card p {
   font-size: 0.9rem;
   color: #555;
+}
+
+.massage-menu {
+  columns: 2;
 }
