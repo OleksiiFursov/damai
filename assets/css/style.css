@@ -88,7 +88,7 @@ Version: 1.0.0
 :root {
   --body-bg: #2b2220;
   --theme-color: #b8860b;
-  --body-color: #bebebe;
+  --body-color: #fff;
   --title-color: #fff;
   --secondary-color: #090708;
   --smoke-color: #eff1f5;
@@ -6043,6 +6043,7 @@ blockquote.vs-quote cite:before {
 }
 .hero-layout1 .vs-btn {
   animation-delay: 0.3s;
+ 
 }
 .hero-layout1 .hero-img {
   flex: 1;
@@ -6129,8 +6130,10 @@ blockquote.vs-quote cite:before {
   max-width: 1031px;
   background-color: #090708;
   z-index: auto;
+
   /* Hight Resoulation devices */
 }
+
 @media (min-width: 1922px) {
   .hero-layout2 .hero-shape-5 {
     max-width: 60%;
@@ -6860,8 +6863,8 @@ blockquote.vs-quote cite:before {
   position: relative;
   background-image: linear-gradient(
     120deg,
-    rgb(253, 230, 216) 0%,
-    rgb(254, 254, 254) 70%
+    var(--black-color) 0%,
+    var(--black-color) 70%
   );
   display: flex;
   align-items: center;
@@ -8248,6 +8251,7 @@ blockquote.vs-quote cite:before {
 .package-style1 .package-btn {
   text-align: center;
 }
+
 .package-style1 .package-dot {
   position: absolute;
   left: 0;
@@ -8316,7 +8320,7 @@ blockquote.vs-quote cite:before {
   background-color: var(--smoke-color);
 }
 .package-style1.layout2 .package-price {
-  color: var(--title-color);
+  color: var(--theme-color);
 }
 .package-style1.layout2:hover .package-price,
 .package-style1.layout2.active .package-price {
@@ -8324,7 +8328,7 @@ blockquote.vs-quote cite:before {
 }
 .package-style1.layout2:hover .vs-btn,
 .package-style1.layout2.active .vs-btn {
-  background-color: var(--title-color);
+  background-color: var(--theme-color);
 }
 
 .slick-slide .package-style1:before {
@@ -9811,8 +9815,8 @@ blockquote.vs-quote cite:before {
   background-color: rgba(253, 231, 218, 0.58);
   background-image: linear-gradient(
     to bottom,
-    #fff8f5 0%,
-    rgba(0, 0, 0, 0) 100%
+   var(--black-color) 0%,
+    var(--black-color) 100%
   );
 }
 
